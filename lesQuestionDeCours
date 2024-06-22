@@ -1,0 +1,16 @@
+Partie 1 : Une histoire de prix
+1.1 Choix d'un patron pour modéliser la situation
+Patron de conception adapté : Le patron Observer est le plus adapté pour cette situation. Il permet de définir une relation de dépendance entre des objets de sorte que lorsqu'un objet change d'état, tous ses dépendants en sont informés et mis à jour automatiquement.
+Pourquoi : Le patron Observer est utilisé pour un scénario où un changement dans un objet doit se refléter dans d'autres objets, ce qui correspond exactement à la situation où plusieurs acteurs suivent les variations du prix d'un article.
+
+PARTIE 3
+
+3.1 Avantages :
+
+    Partage de code : Permet de partager du code commun entre les différentes stratégies, ce qui peut réduire la duplication de code.
+    Extensibilité : Facile d'ajouter des fonctionnalités communes à toutes les stratégies en les plaçant dans la classe abstraite.
+
+Inconvénients :
+
+    Complexité accrue : L'héritage multiple est interdit en Java, donc si une stratégie doit hériter d'une autre classe, cela peut poser des problèmes.
+    Rigidité : Les modifications de la classe abstraite peuvent avoir des impacts sur toutes les stratégies dérivées, augmentant ainsi le risque de bugs.
